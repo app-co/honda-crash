@@ -58,7 +58,7 @@ export default function Home() {
 
       setDocument(dc)
     })
-  }, [])
+  })
 
   async function addNota() {
     try {
@@ -140,7 +140,7 @@ export default function Home() {
         </thead>
         <tbody className="bg-gray-800 divide-y divide-gray-200">
           {document.map(h => (
-            <tr>
+            <tr key={h.parcela}>
               <td className="px-2 py-4 text-[14px] whitespace-nowrap">
                 <h4 className="text-[10px]" >{h.parcela}</h4>
 
