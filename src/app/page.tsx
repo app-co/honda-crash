@@ -4,7 +4,6 @@ import { format } from "date-fns";
 import { addDoc, collection, getDocs } from 'firebase/firestore';
 import { getDownloadURL, ref, uploadBytes } from 'firebase/storage';
 import React, { ChangeEvent, useEffect } from "react";
-export const key = 'comprovant'
 
 interface I {
   parcela: number
@@ -14,6 +13,7 @@ interface I {
 }
 
 export default function Home() {
+  const key = 'comprovant'
   const [file, setFile] = React.useState<any>(null)
   const [document, setDocument] = React.useState<I[]>([])
 
