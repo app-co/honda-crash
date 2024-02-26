@@ -100,27 +100,27 @@ export default function Home() {
   }
 
   return (
-    <main className="flex flex-col p-10 ">
-      <div>
+    <div className="flex flex-col p-4 ">
+      <div className="flex flex-col items-center justify-center w-fulls gap-3" >
         <input
           onChange={uploadImage}
           type="file"
           placeholder=""
           name="plant"
         />
-        <button className="bg-green-600 p-4 rounded-md" onClick={addNota} >Salvar documento</button>
+        <button className="bg-green-700 p-2 px-4 rounded-md" onClick={addNota} >Salvar documento</button>
       </div>
-      <p className="m-4 text-2">Manutenção do veículo Honda city - 2010</p>
-      <div className="p-10 gap-2  bg-gray-600 items-center flex flex-col" >
-        <div>
-          <h1 className="font-black text-[4.5svw] text-orange-500">Meta de pagamento: </h1>
+      <p className="m-4 text-2 text-center">Manutenção do veículo Honda city - 2010</p>
+      <div className="p-10 gap-2  bg-slate-900 items-center flex flex-col" >
+        <div className="flex flex-col w-full" >
+          <h1 className="font-black text-[6.5svw] text-orange-500">Meta de pagamento: </h1>
           <h1>R$ 13.333,38</h1>
 
         </div>
 
-        <div>
+        <div className="flex flex-col w-full" >
           <h2 className="font-bold text-[3.5svw]" >Valor pago até o momento: </h2>
-          <h2 className="font-bold text-blue-200 text-[3.5svw]" >{converValor(currentValor)}</h2>
+          <h2 className="font-bold text-emerald-400 text-[3.5svw]" >{converValor(currentValor)}</h2>
 
         </div>
       </div>
@@ -160,6 +160,6 @@ export default function Home() {
           ))}
         </tbody>
       </table>
-    </main>
+    </div>
   );
 }
