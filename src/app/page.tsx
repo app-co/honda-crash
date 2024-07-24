@@ -131,7 +131,7 @@ export default function Home() {
       <p className="m-4 text-2 text-center">Manutenção do veículo Honda city - 2010</p>
       <div className="p-10 gap-2  bg-slate-900 items-center flex flex-col" >
         <div className="flex flex-col w-full" >
-          <h1 className="font-black text-[6.5svw] text-orange-500">Meta de pagamento: </h1>
+          <h1 className="font-black text-[6.5svw] text-orange-600">Meta de pagamento: </h1>
           <h1>R$ 13.480,47</h1>
 
         </div>
